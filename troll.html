@@ -6,8 +6,13 @@
     </head>
     <body>
         <img src="aizen.jpg">
-    <audio controls autoplay loop >
+    <audio controls autoplay loop id="troll-audio">
         <source src="hehe.mp3">
     </audio>
+    <script>
+        document.addEventListener('click', function() {
+            document.getElementById('troll-audio').play();
+        }, { once: true });
+    </script>
     </body>
-</html>  
+</html>
